@@ -3,38 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Please enter a city" required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Perth</h1>
-        <p>
-          Thursday 20:42, partly cloudy
-          <br />
-          Humidity:12%, wind: 33km/h
-        </p>
-      </div>
-      <div>🌤️ 25°C</div>
-    </main>
+    <div class="weatherapp">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Please enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weatherapp-data">
+          <div>
+            <h1 class="current-city">Perth</h1>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/lunanarae" target="_blank">Narae </a>
-      , hosted on
-      <a href="https://github.com/lunanarae/Weather-app-project" target="_blank"
-        >github</a
-      >
-      and website hosted on
-      <a href="https://welcomeweatherapp.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+            <p class="current-date">
+              Thursday 20:42, partly cloudy
+              <br />
+              Humidity: <span class="humidity-detail">12%</span>, wind:
+              <span class="wind-spped">33km/h</span>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="weather-icon">🌤️</span>
+            <span class="temperature">25</span><span class="unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/lunanarae" target="_blank">Narae </a>
+        , hosted on
+        <a
+          href="https://github.com/lunanarae/Weather-app-project"
+          target="_blank"
+          >github</a
+        >
+        and website hosted on
+        <a href="https://welcomeweatherapp.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
