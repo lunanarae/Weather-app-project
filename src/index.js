@@ -7,6 +7,7 @@ function currentWeatherDetails(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   console.log(response.data);
   weatherCondition.innerHTML = response.data.condition.description;
@@ -17,6 +18,7 @@ function currentWeatherDetails(response) {
   cityElement.innerHTML = response.data.city;
 
   temperatureElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
