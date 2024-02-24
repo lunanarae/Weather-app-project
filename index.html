@@ -18,18 +18,20 @@
       <main>
         <div class="weatherapp-data">
           <div>
-            <h1 class="current-city" id="current-city">Perth</h1>
+            <h1 class="current-city" id="current-city"></h1>
 
             <p class="current-date">
-              Thursday 20:42, partly cloudy
+              <span id="time"></span>,
+              <span id="weather-condition"> </span>
               <br />
-              Humidity: <span class="humidity-detail">12%</span>, wind:
-              <span class="wind-spped">33km/h</span>
+              Humidity: <span class="humidity-detail" id="humidity"></span>,
+              wind:
+              <span class="wind-spped" id="wind-speed">33km/h</span>
             </p>
           </div>
           <div class="current-temperature">
             <span class="weather-icon">🌤️</span>
-            <span class="temperature" id="temperature">25</span
+            <span class="temperature" id="temperature"></span
             ><span class="unit">°C</span>
           </div>
         </div>
