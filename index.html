@@ -17,7 +17,7 @@
       <main>
         <div class="weatherapp-data">
           <div>
-            <h1 class="current-city">Perth</h1>
+            <h1 class="current-city" id="current-city">Perth</h1>
 
             <p class="current-date">
               Thursday 20:42, partly cloudy
@@ -33,14 +33,20 @@
         </div>
       </main>
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Please enter a city"
             required
             class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="search" class="search-form-button" />
+          <input
+            type="submit"
+            value="search"
+            class="search-form-button"
+            id="search-from-button"
+          />
         </form>
       </header>
       <br />
@@ -61,5 +67,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

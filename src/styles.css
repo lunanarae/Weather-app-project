@@ -74,6 +74,9 @@ main {
 .unit {
   font-size: 20px;
 }
+hr {
+  color: rgb(255, 221, 225);
+}
 footer {
   text-align: center;
   font-size: 12px;
